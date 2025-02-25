@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+/* #011C2D #FFA500*/
+
+/* applied to all body */
+*
+{
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+/* applied to all body */
+
+
+/* header is starting from here */
+header
+{
+    position: relative;
+    z-index: 100;
+}
+p
+{
+    font-size: 1.15rem;
+}
+.navbar
+{
+    position: fixed;
+    background: transparent !important;
+    transition: 0.5s;
+    z-index: 99;
+}
+.navbar.scrolled
+{
+    background: #011C2D  !important;
+    transition: 0.5s;
+    border: underline 1px #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link 
+{
+    color: #011C2D;
+    background: #FFA500;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover
+{
+    color: #FFA500;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: #FFA500;
+}
+.navbar-brand
+{
+    margin-left: auto;
+}
+.navbar-light .navbar-brand
+{
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #FFA500;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+.navbar-light .navbar-logo:focus
+.navbar-light .navbar-logo:focus
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FFA500;
+}
+.navbar-logo
+{
+    height: 6rem;
+    width: 6rem;
+}
+/* header is ending here */
+
+/* homepage banner background */
+.banner
+{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(../abc.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.banner:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#011C2D,transparent);
+    pointer-events: none;
+}
+.banner:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#011C2D,transparent);
+    pointer-events: none;
+}
+.height100p
+{
+    height: 100vh;
+}
+.h100
+{
+    height: 100%;
+}
+.contentBox
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+.contentBox h1
+{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.7rem;
+}
+.contentBox p
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+/* banner ending */
+
+/* starting of gallery */
+.sec1
+{
+    padding: 100px 0;
+    background: #011C2D;
+}
+.sec1 h2
+{
+    font-weight: 800;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.headerText
+{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.headerText h2
+{
+    font-size: 2.5rem;
+}
+.placeBox
+{
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    margin-top: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+.placebox 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease,
+}
+
+.placebox:hover 
+{
+    transform: translateY(-10px);
+    border: solid 5px #FFA500;
+    box-shadow: 2.5px 2.5px 2.5px #FFA500;
+    font-size: 18px;
+    font-display: #FFA500;
+    margin: 10px 0 5px;
+}
+
+.placebox .imgBX 
+
+{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.placebox .imgBX img 
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.placebox .imgBX img:hover 
+{
+    transform: scale(1.05);
+}
+
+.placebox .content h3 
+{
+    font-size: 18px;
+    color: #FFA500;
+    margin: 10px 0 5px;
+}
+
+.placebox .content span 
+{
+    font-size: 14px;
+    color: #FFA500;
+}
+.col-sm-4
+{
+    margin: auto;
+    justify-content:space-between;
+}
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .lightbox-overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+/* the ending of gallery */
+
+
+/* marine life information */
+.sec2 
+{
+    position: relative; 
+    background-size: cover;
+    min-height: 100vh; 
+    width: 100%;
+    background: #011C2D;
+    display: flex;
+    z-index: 10;
+}
+
+.sec2 h2 
+{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-align: center; 
+    position: relative;
+    z-index: 10; 
+}
+
+.table
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    height: 50px;
+    border-radius: 0;
+    background: #011C2D;
+    color: #fff;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.thead
+{
+    background: #FFA500 !important;
+    color: #011C2D;
+    text-align: center;
+
+}
+tbody tr th
+{
+    color: #FFA500;
+}
+.tbody
+{
+    text-align: center;
+}
+.td
+{
+    text-align: left;
+}
+/* info of marine life ending here  */
+
+
+/* events starting here */
+.sec3
+{
+    position: relative;
+    padding: 100px 0;
+    background: #011C2D;
+}
+.sec3 h2
+{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-align: center; 
+    position: relative;
+    z-index: 10; 
+}
+.events 
+{
+    position: relative;
+    width: 80%; 
+    max-width: 500px;
+    margin: 20px auto; 
+    background: #fff; 
+    padding: 10px; 
+    box-sizing: border-box;
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.events .imgBx {
+    height: 180px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.events .imgBx img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.events .headerText {
+    padding: 10px;
+    text-align: center;
+}
+
+.events .headerText h1 {
+    margin: 0;
+    padding: 5px 0; 
+    font-weight: 600;
+    font-size: 1.1rem; 
+}
+
+.events .content {
+    padding: 10px; 
+    text-align: justify; 
+    flex-grow: 1; 
+}
+
+.events .content p {
+    margin: 0; 
+    line-height: 1.5rem; 
+}
+
+.btnD2
+{
+    background: #011C2D;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 15px;
+    display: inline-block;
+    margin: 10px auto; 
+    text-align: center;
+    width: fit-content; 
+}
+/* ending of event here */
+
+
+/* modal for events */
+.modal-content
+{
+   background: #FFA500;
+}
+.btnD3
+{
+    background: #011C2D;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 15px;
+    display: inline-block;
+    margin: 10px auto; 
+    text-align: center;
+    width: fit-content; 
+}
+.modal-body .form-control
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    height: 50px;
+    border-radius: 0;
+    background: #011C2D;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.modal-body .form-control:focus,
+.modal-body .form-control:hover
+{
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    box-shadow: none;
+}
+label
+{
+    color: #011C2D;
+    font-size: 1.25rem;
+}
+.modal-header
+{
+    border: #011C2D;
+}
+.modal-header h5
+{
+    font-size: 2rem;
+}
+/* modal ending  */
+
+
+/* this is the visit us */
+.map {
+    width: 100%;
+    max-width: 500px;
+    height: 300px; 
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#map 
+{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+/* this is the ending of visit */
+
+
+/* starting of feeback form */
+.contact
+{
+    position: relative;
+    padding: 100px 0;
+    background: url(../2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    z-index: 1;
+}
+.contact:before,
+.contact:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.contact:before {
+    top: 0;
+    left: 0;
+    height: 400px;
+    background: linear-gradient(#011C2D, transparent); 
+}
+
+.contact:after {
+    bottom: 0;
+    left: 0;
+    height: 400px;
+    background: linear-gradient(360deg, #011C2D, transparent); 
+}
+.contact h2 
+{
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    text-align: center; 
+    position: relative;
+    z-index: 10; 
+}
+.contact form
+{
+    position: relative;
+    z-index: 1000;
+}
+.contact .form-control
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    height: 50px;
+    border-radius: 0;
+    background: #011C2D;
+    color: #fff;
+    font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover
+{
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 2);
+    box-shadow: none;
+}
+.contact .textarea
+{
+    min-height: 100px;
+}
+.contact label
+{
+    color: #fff;
+    font-size: 1.25rem;
+}
+.btnD1
+{
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+    width: fit-content;
+    display: inline-block;
+    padding: 8px 15px;
+    color: #011C2D;
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* ending of feeback form */
+  
+
+/* this is the footer  */
+footer
+{
+    background: #011C2D;
+    padding: 50px 0 0;
+}
+
+.cpryt
+{
+    margin-top: 0px;
+    text-align: center;
+    color: #777;
+}
+.cpryt:nth-child(1) i:hover
+{
+    color: #007BFF;
+}
+/* this is the ending of footer */
+
+
+
+/* this the css for responsive design */
+@media (min-width: 992px)
+{
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    padding-right: .1rem;
+    padding-left: .1rem;
+}
+}
+@media (min-width: 992px)
+{
+    .navbar-light .navbar-toggler
+    {
+        border-radius: 0;
+    }
+    .banner
+    {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .contentBox h1,
+    .sec2 h2
+    {
+        font-size: 3.9rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .sec1
+    {
+        padding: 20px 0;
+    }
+    .headerText h2
+    {
+        font-size: 2rem;
+    }
+    
+    .feedback
+    {
+        padding: 20px 0;
+    }
+    .feedback .form-control
+    {
+        height: 40px;
+        border: 1px solid #fff;
+    }
+    .btnD1
+    {
+        padding: 10px 40px;
+        margin-top: 10px;
+    }
+    footer
+    {
+        background: #011C2D;
+        padding: 0px 0 20px;
+    }
+    
+
+    .sec2
+    {
+        height: auto;
+        padding: 40px 0;
+    }
+}
